@@ -206,7 +206,7 @@ const LandingPage = () => {
                                         <img src="https://wbstatic.webullfintech.com/v1/webull-us-g/assets/bb22435e4a889a1376e56b97878ac976.png" alt="stock trading"/>
                                         <div>
                                             <div data-aos="fade-up" className="wb-animate-wrap animate-top-pricing1 hoursTitle" role="heading" aria-level="2">
-                                                Open a SF Capital Market Account Now!
+                                                Open a SF Capital Market <br/> Account Now!
                                             </div>
                                             <p data-aos="fade-up" className="wb-animate-wrap animate-top-pricing1 part5Des">
                                                 Open your SF Capital Market individual brokerage account and IRAs now!

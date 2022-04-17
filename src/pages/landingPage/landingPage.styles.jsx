@@ -7,6 +7,12 @@ export const LandingPageContainer = styled("div")`
     overflow: hidden;
     position: relative;
 }
+.hoursTitle {
+    white-space: pre;
+    font-family: sans-serif;
+    font-size: 36px;
+    color: #000;
+}
 .wrap {
     height: calc(100vh - 100px);
     position: relative;
