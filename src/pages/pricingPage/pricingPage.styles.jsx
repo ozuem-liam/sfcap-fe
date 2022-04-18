@@ -3,20 +3,20 @@ import styled from "styled-components";
 export const PricingPageContainer = styled("div")`
 @media (max-width: 1000px) {
     .wbus-ssr1689 {
-        width: 600px;
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
     .wbus-ssr1696 {
-        width: 600px;
+        width: 100%;
         padding: 50px 0 10px
     }
     .wbus-ssr1703 {
-        width: 600px;
+        width: 100%;
         padding: 120px 0 20px
     }
     .wbus-ssr1712 {
-        width: 600px;
+        width: 100%;
         padding: 100px 0 20px
     }
 }

@@ -31,19 +31,17 @@ export const Container = styled("div")`
         width: 100%;
         height: 100vh;
         display: flex;
-        position: absolute;
+        position: relative;
         top: 0;
         bottom: 0;
-        background: #fff;
+        right: 0;
+        background: gray;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
     #nav-link {
         display: flex;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        align-items: center;
+        margin-top: 100px;
+        margin-left: 50px;
         padding: 2px 3px 2px 3px;
         font-weight: bold;
     }
@@ -291,30 +289,6 @@ const NavbarComponent = () => {
                 <div className="navbar-sub-container" style={{top:"0px"}} id="common_head">
                     <div className="navbar-section">
                         <img src={SocketFxLogo} alt="Logo" className="logo" />
-        {/* <!-- Mobile menu button--> */}
-        <button onClick={mobileNavBarHandler} type="button" id="hamburger" className="hamburger" aria-controls="mobile-menu" aria-expanded="false">
-          <span className="sr-only">Open main menu</span>
-          {/* <!--
-            Icon when menu is closed.
-
-            Heroicon name: outline/menu
-
-            Menu open: "hidden", Menu closed: "block"
-          --> */}
-          <svg className={showMobileNav ? "hidden" : "block"} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-          {/* <!--
-            Icon when menu is open.
-
-            Heroicon name: outline/x
-
-            Menu open: "block", Menu closed: "hidden"
-          --> */}
-          <svg className={showMobileNav ? "block" : "hidden"} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
                         <nav role="menubar" className="nav">
                             <a role="menuitem" aria-label="home" href="/" className="">HOME</a>
                             <a role="menuitem" aria-label="MARKET" href="market" className="">MARKET</a>
@@ -327,29 +301,54 @@ const NavbarComponent = () => {
                                 <Link to="/signup" role="button" aria-label="SIGN UP" className="signup-btn">SIGN UP</Link>
                             </div>
                         </div>
+
+                        {/* <!-- Mobile menu button--> */}
+                        <button onClick={mobileNavBarHandler} type="button" id="hamburger" className="hamburger" aria-controls="mobile-menu" aria-expanded="false">
+                        <span className="sr-only">Open main menu</span>
+                        {/* <!--
+                            Icon when menu is closed.
+
+                            Heroicon name: outline/menu
+
+                            Menu open: "hidden", Menu closed: "block"
+                        --> */}
+                        <svg className={showMobileNav ? "hidden" : "block"} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        {/* <!--
+                            Icon when menu is open.
+
+                            Heroicon name: outline/x
+
+                            Menu open: "block", Menu closed: "hidden"
+                        --> */}
+                        <svg className={showMobileNav ? "block" : "hidden"} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                        </button>
                     </div>
                 </div>
             </div>
 
                             {/* <!-- Mobile menu, show/hide based on menu state. --> */}
-    <div className={showMobileNav ? 'mobile-menu' : 'hidden'}>
-    <div className="menu-nav">
-      {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
-        <div id="nav-link" className="nav-link" aria-current="page">
-          <span onClick={loadHome} className="nav-text">Home</span>
-        </div>
-        <div id="nav-link" className="nav-link">
-          <span onClick={loadMarket} className="nav-text">Market</span>
-        </div>
-        <div id="nav-link" className="nav-link">
-          <span onClick={loadPricing} className="nav-text">Pricing</span>
-        </div>
-        <div id="nav-link" className="nav-link">
-        <span style={{marginRight: "10px"}} onClick={loadLogin} role="button" aria-label="LOG IN" className="m-login-btn">LOG IN</span>
-        <span onClick={loadSignUp} role="button" aria-label="SIGN UP" className="m-login-btn">SIGN UP</span>
-        </div>
-    </div>
-  </div>
+                <div className={showMobileNav ? 'mobile-menu' : 'hidden'}>
+                    <div className="menu-nav">
+                    {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
+                        <div id="nav-link" className="nav-link" aria-current="page">
+                        <span onClick={loadHome} className="nav-text">Home</span>
+                        </div>
+                        <div id="nav-link" className="nav-link">
+                        <span onClick={loadMarket} className="nav-text">Market</span>
+                        </div>
+                        <div id="nav-link" className="nav-link">
+                        <span onClick={loadPricing} className="nav-text">Pricing</span>
+                        </div>
+                        <div id="nav-link" className="nav-link">
+                        <span style={{marginRight: "10px"}} onClick={loadLogin} role="button" aria-label="LOG IN" className="m-login-btn">LOG IN</span>
+                        <span onClick={loadSignUp} role="button" aria-label="SIGN UP" className="m-login-btn">SIGN UP</span>
+                        </div>
+                    </div>
+                </div>
         </Container>
     );
 }

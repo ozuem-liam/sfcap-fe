@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const LandingPageContainer = styled("div")`
 @media (max-width: 1000px) {
     .banner {
-        width: 400px;
-        height: 606px;
+        width: 100%;
+        height: 100vh;
     }
     .hoursTitle {
         white-space: pre;
@@ -13,7 +13,7 @@ export const LandingPageContainer = styled("div")`
         color: #000;
     }
     .wrap {
-        height: calc(300px - 100px);
+        height: calc(100vh - 100px);
         position: relative;
     }
     .wrap>div {
@@ -27,17 +27,20 @@ export const LandingPageContainer = styled("div")`
         position: absolute;
         left: 0;
         top: 0;
+        height: 100vh;
     }
     .topWrap {
         padding-top: 11%;
     }
     .bannerTitle {
         width: 60%;
+        text-align: left;
         font-size: 15px;
         position: relative;
     }
     .bannerDesc {
         width: 60%;
+        text-align: left;
         margin: 0;
         font-size: 10px;
         line-height: 20px;
@@ -471,7 +474,7 @@ video {
 }
 .bannerTitle {
     width: 100%;
-    text-align: center;
+    text-align: left;
     font-family: sans-serif;
     font-size: 50px;
     color: #001b39;

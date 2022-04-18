@@ -8,14 +8,14 @@ export const MarketPageContainer = styled("div")`
     }  
 
     #wbus-ssr30813209 {
-        width: 500px;
+        width: 100%;
         display: flex;
         flex-direction: row;
         position: relative;
     }
 
     #wbus-ssr30813290 {
-        width: 500px;
+        width: 100%;
         height: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -23,7 +23,7 @@ export const MarketPageContainer = styled("div")`
     }
 
     #wbus-ssr30813172 {
-        width: 500px;
+        width: 100%;
         height: 410px;
         display: grid;
         grid-template-columns: 1fr;
@@ -33,9 +33,8 @@ export const MarketPageContainer = styled("div")`
     }
 
     #wbus-ssr30813171 {
-        width: 500px;
-        display: grid;
-        grid-template-columns: 1fr;
+        width: 100%;
+        display: flex;
         margin-top: 20px;
         padding-bottom: 0;
         justify-content: space-between;
@@ -51,7 +50,7 @@ export const MarketPageContainer = styled("div")`
     }
 
     #wbus-ssr30813170 {
-        width: 500px;
+        width: 100%;
         display: grid;
         grid-template-columns: 1fr;
         margin-top: 20px;
@@ -61,8 +60,7 @@ export const MarketPageContainer = styled("div")`
     #wbus-ssr30813211 {
         width: 100%;
         height: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
+        display: flex;
     }
 
     #wbus-ssr30813235 {
@@ -74,8 +72,7 @@ export const MarketPageContainer = styled("div")`
         box-sizing: border-box;
         text-align: left;
         border-radius: 3px;
-        display: grid;
-        grid-template-columns: 1fr;
+        display: flex;
         background-color: #fff;
     }
     
