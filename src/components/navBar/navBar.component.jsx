@@ -29,12 +29,17 @@ export const Container = styled("div")`
     }
     .menu-nav {
         width: 100%;
+        height: 100vh;
         display: flex;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        background: #fff;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .nav-link {
+    #nav-link {
         display: flex;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -42,7 +47,7 @@ export const Container = styled("div")`
         padding: 2px 3px 2px 3px;
         font-weight: bold;
     }
-    .nav-link::hover {
+    #nav-link::hover {
         background: #007CFF;
         color: white;
         border: 2px solid #007CFF;
@@ -78,7 +83,7 @@ export const Container = styled("div")`
     .navbar-section {
         width: 100%;
     }
-    .hamburger {
+    #hamburger {
         display: inline-flex;
         justify-content: center;
         align-items: center;
@@ -86,7 +91,7 @@ export const Container = styled("div")`
         border-radius: 2rem;
         color: gray;
     }
-    .hamburger:hover {
+    #hamburger:hover {
         background: gray;
         color: white;
     }
@@ -112,20 +117,31 @@ export const Container = styled("div")`
         float: right;
     }
     
+    .m-login-btn {
+        color: #FFFFFF;
+        float: right;
+        width: 110px;
+        cursor: pointer;
+        height: 36px;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: sans-serif;
+        background: #007CFF;
+        box-sizing: border-box;
+        text-align: center;
+        line-height: 36px;
+        border-radius: 21px;
+        text-decoration: none;
+    }
+    
+    .m-login-btn:hover {
+        background-color: rgba(0, 124, 255, 0.8);
+    }
     .login-btn {
         display: none;
     }
-    
-    .login-btn:hover {
-        background-color: rgba(0, 124, 255, 0.8);
-    }
-    
     .signup-btn {
         display: none;
-    }
-    
-    .signup-btn:hover {
-        color: rgba(0, 124, 255, 0.8);
     }
 }
 
@@ -134,13 +150,12 @@ export const Container = styled("div")`
 .nav-link {
     display: none; 
 }
-.hamburger {
-    display: none;
-}
 .navbar-container {
     height: 80px;
 }
-
+.hamburger {
+    display: none;
+}
 .navbar-sub-container {
     width: 100%;
     height: 80px;
@@ -150,6 +165,7 @@ export const Container = styled("div")`
 }
 
 .navbar-section {
+    width: 100%;
     height: 100%;
     margin: 0 auto;
     font-family: sans-serif;
@@ -157,7 +173,7 @@ export const Container = styled("div")`
     z-index: 20;
     position: relative;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .wbus-ssr1059615 {
@@ -262,6 +278,13 @@ const NavbarComponent = () => {
         window.location.href = "/pricing";
     }
 
+    function loadLogin() {
+        window.location.href = "/login";
+    }
+
+    function loadSignUp() {
+        window.location.href = "/signup";
+    }
     return (
         <Container>
             <div className="navbar-container" style={{height:"80px"}}>
@@ -269,7 +292,7 @@ const NavbarComponent = () => {
                     <div className="navbar-section">
                         <img src={SocketFxLogo} alt="Logo" className="logo" />
         {/* <!-- Mobile menu button--> */}
-        <button onClick={mobileNavBarHandler} type="button" className="hamburger" aria-controls="mobile-menu" aria-expanded="false">
+        <button onClick={mobileNavBarHandler} type="button" id="hamburger" className="hamburger" aria-controls="mobile-menu" aria-expanded="false">
           <span className="sr-only">Open main menu</span>
           {/* <!--
             Icon when menu is closed.
@@ -312,18 +335,18 @@ const NavbarComponent = () => {
     <div className={showMobileNav ? 'mobile-menu' : 'hidden'}>
     <div className="menu-nav">
       {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
-        <div className="nav-link" aria-current="page">
+        <div id="nav-link" className="nav-link" aria-current="page">
           <span onClick={loadHome} className="nav-text">Home</span>
         </div>
-        <div className="nav-link">
+        <div id="nav-link" className="nav-link">
           <span onClick={loadMarket} className="nav-text">Market</span>
         </div>
-        <div className="nav-link">
+        <div id="nav-link" className="nav-link">
           <span onClick={loadPricing} className="nav-text">Pricing</span>
         </div>
-        <div className="nav-link">
-            <Link to="/login" role="button" aria-label="LOG IN" className="login-btn">LOG IN</Link>
-            <Link to="/signup" role="button" aria-label="SIGN UP" className="signup-btn">SIGN UP</Link>
+        <div id="nav-link" className="nav-link">
+        <span style={{marginRight: "10px"}} onClick={loadLogin} role="button" aria-label="LOG IN" className="m-login-btn">LOG IN</span>
+        <span onClick={loadSignUp} role="button" aria-label="SIGN UP" className="m-login-btn">SIGN UP</span>
         </div>
     </div>
   </div>

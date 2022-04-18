@@ -203,10 +203,10 @@ const LandingPage = () => {
                                     </div>
 
                                     <div className="scroll" id="scroll-image">
-                                        <img ref={imageOneRef} src="https://wbstatic.webullfintech.com/v1/webull-us-g/assets/1847f17aa70513069a88b59701124edc.png" alt="stock online" width="600" height="650" style={{marginTop:"10px", paddingTop:"20px"}}/>
-                                        <img ref={imageTwoRef} src="https://wbstatic.webullfintech.com/v1/webull-us-g/assets/3c8d564ece805585cded436ca030eeec.png" alt="stock trading apps" width="600" height="650" style={{marginTop:"10px", paddingTop:"20px"}}/>
-                                        <img ref={imageThreeRef} src="https://wbstatic.webullfintech.com/v1/webull-us-g/assets/9c5e2c9ee67eee9ecb3a655f54162656.png" alt="online stock trading" width="600" height="650" style={{marginTop:"10px", paddingTop:"20px"}}/>
-                                        <img ref={imageFourRef} src="https://wbstatic.webullfintech.com/v1/webull-us-g/assets/5fbfdc19b4ef44dfaa73fd19896a531f.png" alt="stock broker" height="650" width="600" style={{marginTop:"10px", paddingTop:"20px"}}/>
+                                        <img ref={imageOneRef} src="https://wbstatic.webullfintech.com/v1/webull-us-g/assets/1847f17aa70513069a88b59701124edc.png" alt="stock online" width="580" height="650" />
+                                        <img ref={imageTwoRef} src="https://wbstatic.webullfintech.com/v1/webull-us-g/assets/3c8d564ece805585cded436ca030eeec.png" alt="stock trading apps" width="580" height="650" />
+                                        <img ref={imageThreeRef} src="https://wbstatic.webullfintech.com/v1/webull-us-g/assets/9c5e2c9ee67eee9ecb3a655f54162656.png" alt="online stock trading" width="580" height="650" />
+                                        <img ref={imageFourRef} src="https://wbstatic.webullfintech.com/v1/webull-us-g/assets/5fbfdc19b4ef44dfaa73fd19896a531f.png" alt="stock broker" height="650" width="580" />
                                     </div>
                                 </section>
                                 

@@ -1,6 +1,86 @@
 import styled from "styled-components";
 
 export const MarketPageContainer = styled("div")`
+@media (max-width: 1000px) {
+    .wbus-ssr30813137 {
+        display: flex;
+        flex-direction: column;
+    }  
+
+    #wbus-ssr30813209 {
+        width: 500px;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    #wbus-ssr30813290 {
+        width: 500px;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: space-between;
+    }
+
+    #wbus-ssr30813172 {
+        width: 500px;
+        height: 410px;
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+        padding-top: 120px;
+        justify-content: space-between;
+    }
+
+    #wbus-ssr30813171 {
+        width: 500px;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+        padding-bottom: 0;
+        justify-content: space-between;
+    }
+
+    #wbus-ssr30813168 {
+        width: 100%;
+        height: 524px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding-top: 120px;
+    }
+
+    #wbus-ssr30813170 {
+        width: 500px;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+
+    #wbus-ssr30813211 {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #wbus-ssr30813235 {
+        width: 100%;
+        height: 100%;
+        padding: 17px 20px 30px 20px;
+        position: relative;
+        box-shadow: 0 3px 20px 0 rgba(0, 77, 165, 0.07);
+        box-sizing: border-box;
+        text-align: left;
+        border-radius: 3px;
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: #fff;
+    }
+    
+}
+
 
 .wbus-ssr30813137 {
     display: flex;

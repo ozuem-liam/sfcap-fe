@@ -23,9 +23,9 @@ const MarketPage = () => {
                             <div className="wbus-ssr30813207 wbus-ssr30813187"><span className="titleTxt1"></span></div>
                             <div className="wbus-ssr30813208 wbus-ssr30813179">
                                 <div className="wbus-ssr30813175 wbus-ssr30813190"></div>
-                                <div className="wbus-ssr30813209">
+                                <div id="wbus-ssr30813209" className="wbus-ssr30813209">
                                     <div className="wbus-ssr30813210">
-                                        <div className="wbus-ssr30813211">
+                                        <div id="wbus-ssr30813211" className="wbus-ssr30813211">
                                             <div className="wbus-ssr30813223"><span className="wbus-ssr30813222"></span><div target="_self" href="quote/nysearca-spy " className="wbus-ssr30813224" aria-label="View quote detail page of SPY">SPY</div>
                                                 <div className="wbus-ssr30813225 wbus-ssr30813217">453.12</div>
                                                 <div className="wbus-ssr30813226 wbus-ssr30813217">-0.47 -0.10%</div>
@@ -97,9 +97,9 @@ const MarketPage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="wbus-ssr30813168">
+                    <div id="wbus-ssr30813168" className="wbus-ssr30813168">
                         <div className="wbus-ssr30813169" role="heading" aria-level="2">Market Overview</div>
-                        <div className="wbus-ssr30813235">
+                        <div id="wbus-ssr30813235" className="wbus-ssr30813235">
                             <div className="wbus-ssr30813238">
                                 <div className="wbus-ssr30813239" role="heading" aria-level="3">Advancers &amp; Decliners Distribution</div>
                             </div>
@@ -126,7 +126,7 @@ const MarketPage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="wbus-ssr30813170">
+                    <div id="wbus-ssr30813170" className="wbus-ssr30813170">
                         <div className="wbus-ssr30813243 wbus-ssr30813174">
                             <div className="wbus-ssr30813244"><div className="titleTxt" href="quote/rankgainer " aria-label="View the whole list of Top Gainers">Top Gainers</div></div>
                             <div className="wbus-ssr30813245">
@@ -179,7 +179,7 @@ const MarketPage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="wbus-ssr30813171">
+                    <div id="wbus-ssr30813171" className="wbus-ssr30813171">
                         <div className="wbus-ssr30813261 wbus-ssr30813174">
                             <div className="wbus-ssr30813262"><div className="titleTxt" href="quote/ipos " aria-label="View the whole list of IPO-Offerings">IPO-Offerings</div></div>
                             <div className="wbus-ssr30813263">
@@ -217,7 +217,7 @@ const MarketPage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="wbus-ssr30813171">
+                    <div id="wbus-ssr30813171" className="wbus-ssr30813171">
                         <div className="wbus-ssr30813261 wbus-ssr30813174">
                             <div className="wbus-ssr30813262"><div className="titleTxt" href="quote/earnings " aria-label="View the whole list of Earnings">Earnings</div></div>
                             <div className="wbus-ssr30813263">
@@ -255,7 +255,7 @@ const MarketPage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="wbus-ssr30813172">
+                    <div id="wbus-ssr30813172" className="wbus-ssr30813172">
                         <div className="wbus-ssr30813169"><span className="titleTxt" role="heading" aria-level="2">Best-Performing Industries</span></div>
                         <section className="wbus-ssr30813283">
                             <div className="wbus-ssr30813285" href="quote/sector_morelist/7249 " target="_self" aria-label="View quote detail page of Investment Holding Companies">
