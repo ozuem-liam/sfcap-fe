@@ -8,6 +8,11 @@ import countries from "./countries.js";
 import { ROOT_URL as BASE_BACKEND_URL } from "../../constant";
 
 const Container = styled.div`
+.login-wrap {
+  background: url(https://wbstatic.webullfintech.com/v1/invest-g/2f8b936….jpg) center center no-repeat;
+  height: 100vh;
+  background-size: cover;
+}
 .index-nav-wrap-pc {
   margin: 0 auto;
   position: relative;
@@ -255,7 +260,7 @@ const SignupPage = () => {
 
   return (
     <Container>
-      <div>
+      <div className="login-wrap">
       <div className="login-content">
       <div className="content-wrap-pc">
       <div>

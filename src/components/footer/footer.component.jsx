@@ -2,17 +2,34 @@ import React from 'react';
 import styled from "styled-components";
 
 export const Container = styled("div")`
+@media (max-width: 1000px) {
+    .wbus-ssr2271643 {
+        color: #373b3f;
+        width: 100%;
+        padding: 33px 0 83px;
+        font-size: 12px;
+        background-color: #FFFFFF;
+        background-image: url(https://rep.webullfintech.com/o.png);
+    }
+    .wbus-ssr2271646 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-bottom: 1px solid #EAF1F5;
+        padding-left: 30px;
+        justify-content: space-between;
+    }
+}
 .wbus-ssr2271643 {
     color: #373b3f;
     width: 100%;
     padding: 33px 0 83px;
     font-size: 12px;
-    min-width: 1100px;
     background-color: #FFFFFF;
     background-image: url(https://rep.webullfintech.com/o.png);
 }
 .wbus-ssr2271645 {
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
 }
 .wbus-ssr2271646 {

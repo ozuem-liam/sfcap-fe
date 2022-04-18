@@ -20,38 +20,48 @@ const LandingPage = () => {
     const [imageFourIsVisible, setImageFourIsVisible] = useState(false);
     const [imageContentFixed, setImageContentFixed] = useState(false);
 
+    const mediaQuery = window.matchMedia('(min-width: 1000px)');
+
     const changeScrollingImage = () => {
-        if(window.scrollY >= 2500 && window.scrollY < 4704) {
-            setImageContentFixed(true)
-        }
-        if(window.scrollY > 2027 && window.scrollY < 2822) {
-            setImageOneIsVisible(true)
-            setImageTwoIsVisible(false)
-            setImageThreeIsVisible(false)
-            setImageFourIsVisible(false)
-        } else if (window.scrollY > 2822 && window.scrollY < 3632) {
-            setImageOneIsVisible(false)
-            setImageTwoIsVisible(true)
-            setImageThreeIsVisible(false)
-            setImageFourIsVisible(false)
-        } else if (window.scrollY > 3632 && window.scrollY < 4247) {
-            setImageOneIsVisible(false)
-            setImageTwoIsVisible(false)
-            setImageThreeIsVisible(true)
-            setImageFourIsVisible(false)
-        } else if (window.scrollY > 4247 && window.scrollY < 4704) {
-            setImageOneIsVisible(false)
-            setImageTwoIsVisible(false)
-            setImageThreeIsVisible(false)
-            setImageFourIsVisible(true)
+        if (mediaQuery.matches) {
+            if(window.scrollY >= 2500 && window.scrollY < 4704) {
+                setImageContentFixed(true)
+            }
+            if(window.scrollY > 2027 && window.scrollY < 2822) {
+                setImageOneIsVisible(true)
+                setImageTwoIsVisible(false)
+                setImageThreeIsVisible(false)
+                setImageFourIsVisible(false)
+            } else if (window.scrollY > 2822 && window.scrollY < 3632) {
+                setImageOneIsVisible(false)
+                setImageTwoIsVisible(true)
+                setImageThreeIsVisible(false)
+                setImageFourIsVisible(false)
+            } else if (window.scrollY > 3632 && window.scrollY < 4247) {
+                setImageOneIsVisible(false)
+                setImageTwoIsVisible(false)
+                setImageThreeIsVisible(true)
+                setImageFourIsVisible(false)
+            } else if (window.scrollY > 4247 && window.scrollY < 4704) {
+                setImageOneIsVisible(false)
+                setImageTwoIsVisible(false)
+                setImageThreeIsVisible(false)
+                setImageFourIsVisible(true)
+            } else {
+                setImageOneIsVisible(false)
+                setImageTwoIsVisible(false)
+                setImageThreeIsVisible(false)
+                setImageFourIsVisible(false)
+                setImageContentFixed(false)
+            }
         } else {
-            setImageOneIsVisible(false)
-            setImageTwoIsVisible(false)
-            setImageThreeIsVisible(false)
-            setImageFourIsVisible(false)
-            setImageContentFixed(false)
+            document.getElementById("display-div1").classList.add("display-content");
+            document.getElementById("display-div2").classList.add("display-content");
+            document.getElementById("display-div3").classList.add("display-content");
+            document.getElementById("display-div4").classList.add("display-content");
         }
     }
+
     window.addEventListener('scroll', changeScrollingImage);
 
     function load() {
@@ -147,7 +157,7 @@ const LandingPage = () => {
                                 <section className="part3">
                                     <div className="wbus-ssr2271631">
                                         <div className={imageContentFixed ? "image-content image-content-fixed" : "image-content"}>
-                                            <div className={imageOneIsVisible ? "wbus-ssr2271634 display-content" : "wbus-ssr2271634"}>
+                                            <div id="display-div1" className={imageOneIsVisible ? "wbus-ssr2271634 display-content" : "wbus-ssr2271634"}>
                                                 <p role="heading" aria-level="2">
                                                     Full Extended Hours Trading
                                                 </p>
@@ -158,7 +168,7 @@ const LandingPage = () => {
                                         </div>
 
                                         <div className={imageContentFixed ? "image-content image-content-fixed" : "image-content"}>
-                                            <div className={imageTwoIsVisible ? "wbus-ssr2271634 display-content" : "wbus-ssr2271634"}>
+                                            <div id="display-div2" className={imageTwoIsVisible ? "wbus-ssr2271634 display-content" : "wbus-ssr2271634"}>
                                                 <p role="heading" aria-level="2">
                                                     In-depth Analysis Tools
                                                 </p>
@@ -172,7 +182,7 @@ const LandingPage = () => {
                                         </div>
 
                                         <div className={imageContentFixed ? "image-content image-content-fixed" : "image-content"}>
-                                            <div className={imageThreeIsVisible ? "wbus-ssr2271634 display-content" : "wbus-ssr2271634"}>
+                                            <div id="display-div3" className={imageThreeIsVisible ? "wbus-ssr2271634 display-content" : "wbus-ssr2271634"}>
                                                 <p role="heading" aria-level="2">
                                                     Free Access to SF Capital Market Desktop
                                                 </p>
@@ -183,7 +193,7 @@ const LandingPage = () => {
                                         </div>
 
                                         <div className={imageContentFixed ? "image-content image-content-fixed" : "image-content"}>
-                                            <div className={imageFourIsVisible ? "wbus-ssr2271634 display-content" : "wbus-ssr2271634"}>
+                                            <div id="display-div4" className={imageFourIsVisible ? "wbus-ssr2271634 display-content" : "wbus-ssr2271634"}>
                                                 <p role="heading" aria-level="2">Stay Connected 24/7</p>
                                                 <p>
                                                     Our customer service reps are ready 24/7 to help guide you through our multiple platforms and answer all your questions!
