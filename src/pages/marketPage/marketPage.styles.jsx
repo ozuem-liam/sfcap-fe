@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const MarketPageContainer = styled("div")`
 @media (max-width: 1000px) {
+    overflow: hidden;
     .wbus-ssr30813137 {
         display: flex;
         flex-direction: column;
@@ -218,7 +219,7 @@ export const MarketPageContainer = styled("div")`
 }
 
 .wbus-ssr30813157 {
-    width: 1240px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 20px;
     overflow: hidden;

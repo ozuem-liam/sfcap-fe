@@ -1,5 +1,4 @@
 import React from 'react';
-
 import {MarketPageContainer} from "./marketPage.styles"
 
 import NavbarComponent from "../../components/navBar/navBar.component"
@@ -9,7 +8,6 @@ const MarketPage = () => {
     return (
         <MarketPageContainer>
             <NavbarComponent />
-            <section style={{marginTop:"30px"}} className="wbus-ssr30813157">
                 <div style={{paddingBottom:"10px"}}>
                     <div className="wbus-ssr30813177">
                         <div className="wbus-ssr30813192">
@@ -334,7 +332,6 @@ const MarketPage = () => {
                         </div>
                     </div>
                 </div>
-            </section>
             <div style={{borderTop:"1px solid #000",opacity:"0.1"}}></div>
             <FooterComponent />
         </MarketPageContainer>

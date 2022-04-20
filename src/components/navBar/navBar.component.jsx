@@ -42,7 +42,7 @@ export const Container = styled("div")`
     }
     #nav-link {
         display: flex;
-        margin-top: 100px;
+        margin-top: 50px;
         margin-left: 50px;
         padding: 2px 3px 2px 3px;
         font-weight: bold;
@@ -53,7 +53,7 @@ export const Container = styled("div")`
         border: 2px solid #007CFF;
     }
     .nav-text {
-        font-size: 40px;
+        font-size: 20px;
         margin-right: 2px;
         color: #007CFF;
     }

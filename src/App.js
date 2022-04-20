@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Switch, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 
 import LandingPage from "./pages/landingPage/landingPage.component";
 import PricingPage from "./pages/pricingPage/pricingPage.component";
@@ -29,29 +30,31 @@ function App() {
     localStorage.removeItem("login");
   }, []);
   return (
-    <Switch>
-      <Route exact path='/' component={LandingPage} />
-      <Route path='/pricing' component={PricingPage} />
-      <Route path='/market' component={MarketPage} />
-      <Route path='/privacy-policy' component={PrivacyPolicy} />
-      <Route path='/terms-and-conditions' component={TermsConditions} />
-      <Route path='/user/dashboard' component={UserDashboard} />
-      <Route path='/user/personaldetails' component={PersonalDetails} />
-      <Route path='/user/paymentdetails' component={PaymentDetails} />
-      <Route exact path='/user/deposit' component={Deposit} />
-      <Route path='/user/withdrawal' component={Withdrawal} />
-      <Route path='/user/activatepackage' component={ActivatePackage} />
-      <Route path='/user/currentpackage' component={CurrentPackage} />
-      <Route path='/user/transaction' component={Transaction} />
-      <Route path='/user/referrals' component={Referrals} />
-      <Route path='/user/deposit/payment' component={DepositPayment} />
-      <Route path='/login' component={LoginPage} />
-      <Route path='/signup' component={SignupPage} />
-      <Route path='/admin/login' component={AdminLoginPage} />
-      <Route path='/admin/dashboard' component={AdminDashboard} />
-      <Route path='/admin/users/Details' component={UsersDetails} />
-      <Route path='/admin/users' component={Users} />
-    </Switch>
+    <div className='App'>
+      <Switch>
+        <Route exact path='/' component={LandingPage} />
+        <Route path='/pricing' component={PricingPage} />
+        <Route path='/market' component={MarketPage} />
+        <Route path='/privacy-policy' component={PrivacyPolicy} />
+        <Route path='/terms-and-conditions' component={TermsConditions} />
+        <Route path='/user/dashboard' component={UserDashboard} />
+        <Route path='/user/personaldetails' component={PersonalDetails} />
+        <Route path='/user/paymentdetails' component={PaymentDetails} />
+        <Route exact path='/user/deposit' component={Deposit} />
+        <Route path='/user/withdrawal' component={Withdrawal} />
+        <Route path='/user/activatepackage' component={ActivatePackage} />
+        <Route path='/user/currentpackage' component={CurrentPackage} />
+        <Route path='/user/transaction' component={Transaction} />
+        <Route path='/user/referrals' component={Referrals} />
+        <Route path='/user/deposit/payment' component={DepositPayment} />
+        <Route path='/login' component={LoginPage} />
+        <Route path='/signup' component={SignupPage} />
+        <Route path='/admin/login' component={AdminLoginPage} />
+        <Route path='/admin/dashboard' component={AdminDashboard} />
+        <Route path='/admin/users/Details' component={UsersDetails} />
+        <Route path='/admin/users' component={Users} />
+      </Switch>
+    </div>
   );
 }
 

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const LandingPageContainer = styled("div")`
+  overflow: hidden;
   @media (max-width: 1000px) {
     .hoursTitle {
       width: 100%;
@@ -317,15 +318,16 @@ export const LandingPageContainer = styled("div")`
     }
     .display-content {
       width: 100%;
+      padding: 10px;
       display: flex;
     }
 
     .wbus-ssr2271634 {
       display: none;
       width: 100%;
-      overflow-y: hidden;
-      height: 200px;
+      height: 300px;
       margin: 0;
+      overflow-y: hidden;
       margin-left: 10px;
       will-change: opacity, transform;
       flex-direction: column;
@@ -334,6 +336,7 @@ export const LandingPageContainer = styled("div")`
     }
 
     .wbus-ssr2271634 > p {
+      width: 100%;
       font-size: 36px;
       font-family: sans-serif;
       white-space: pre-line;
@@ -355,16 +358,20 @@ export const LandingPageContainer = styled("div")`
     }
     .partContent {
       width: 100%;
-      margin: 0 auto;
+      margin: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
     }
+    .partContent > img {
+        width: 100%;
+        padding: 20px;
+    }
     .part5Des {
       font-size: 18px;
       width: 100%;
-      padding-right: 40px;
+      padding-right: 0px;
       line-height: 28px;
       position: relative;
     }
@@ -752,7 +759,8 @@ export const LandingPageContainer = styled("div")`
   }
   .wbus-ssr2271634 {
     display: none;
-    width: 500px;
+    width: 100%;
+    margin: 0;
     overflow-y: hidden;
     height: 600px;
     will-change: opacity, transform;
@@ -763,10 +771,12 @@ export const LandingPageContainer = styled("div")`
 
   .display-content {
     width: 100%;
+    padding: 10px;
     display: flex;
   }
 
   .wbus-ssr2271634 > p {
+    width: 100%;
     font-size: 36px;
     font-family: sans-serif;
     white-space: pre-line;
@@ -786,18 +796,15 @@ export const LandingPageContainer = styled("div")`
   }
 
   .part5 {
-    padding: 107px 0 140px;
     background: #f4fbfd;
     position: relative;
   }
   .partContent {
     width: 100%;
-    padding: 50px;
   }
   .part5Content {
     width: 100%;
-    margin-top: 100px;
-    padding: 20px;
+    padding: 20px
   }
   .part5Des {
     padding-top: 20px;

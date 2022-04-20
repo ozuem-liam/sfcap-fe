@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const PricingPageContainer = styled("div")`
 @media (max-width: 1000px) {
+    overflow: hidden;
     .wbus-ssr1689 {
         width: 100%;
         display: flex;
@@ -95,7 +96,7 @@ export const PricingPageContainer = styled("div")`
 }
 
 .wbus-ssr1694 {
-    flex: 1;
+    padding: 10px;
     margin-right: 30px
 }
 
@@ -121,7 +122,7 @@ export const PricingPageContainer = styled("div")`
 }
 
 .wbus-ssr1696 {
-    padding: 50px 0 10px
+    padding: 10px;
 }
 
 .wbus-ssr1697 {
@@ -228,7 +229,7 @@ export const PricingPageContainer = styled("div")`
 }
 
 .wbus-ssr1703 {
-    padding: 120px 0 20px
+    padding: 10px;
 }
 
 .wbus-ssr1704 {
@@ -406,7 +407,7 @@ export const PricingPageContainer = styled("div")`
 }
 
 .wbus-ssr1712 {
-    padding: 100px 0 20px
+    padding: 10px;
 }
 
 .wbus-ssr1713 {

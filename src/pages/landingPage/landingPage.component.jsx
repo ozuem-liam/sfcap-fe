@@ -452,7 +452,6 @@ const LandingPage = () => {
             <img
               src='https://wbstatic.webullfintech.com/v1/webull-us-g/assets/bb22435e4a889a1376e56b97878ac976.png'
               alt='stock trading'
-              width='100%'
             />
           </div>
         </Col>

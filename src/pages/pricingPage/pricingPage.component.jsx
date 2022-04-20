@@ -1,5 +1,5 @@
 import React from 'react';
-
+import{ Row, Col } from "react-bootstrap";
 import {PricingPageContainer} from "./pricingPage.styles"
 
 import NavbarComponent from "../../components/navBar/navBar.component"
@@ -12,9 +12,8 @@ const PricingPage = () => {
     return (
         <PricingPageContainer>
             <NavbarComponent />
-            <section className="wbus-ssr1688">
-            <div style={{margin:"0 40px"}}>
-                <div className="wbus-ssr1689">
+            <Row>
+                <Col lg="6" md="6" sm="12" xs="12">
                     <div className="wbus-ssr1694">
                         <h1 className="wbus-ssr1690" aria-level="1">SF Capital Market Financial Fee Schedule</h1>
                         <p className="wbus-ssr1692">SF Capital Market believes that technology empowers traders to be more profitable helping to grow our user’s economic freedom. Technology also enables us to provide transparent and straightforward prices with 0 commission trades and no deposit minimums.</p>
@@ -23,8 +22,9 @@ const PricingPage = () => {
                     </div>
 
                     <div className="wbus-ssr1691" style={{backgroundImage:"url(https://webullmarket.com/asset/webull/webull-us-g/assets/f277e8632c9a040c4cae782855f8a30a.png)"}}></div>
-                </div>
-                <div className="wbus-ssr1696">
+                </Col>
+                <Col lg="6" md="6" sm="12" xs="12">
+                    <div className='wbus-ssr1696'>
                     <h1 className="wbus-ssr1697" aria-level="2">Tiered Margin Interest Rates</h1>
                     <h2 className="wbus-ssr1698">Annual Margin Rate</h2>
                     <p className="wbus-ssr1699">SF Capital Market provides up to 4x day-trade buying power and 2x overnight buying power with a margin account. You must have at least $2,000 to qualify.<br/>Interest on margin trading is calculated on a daily basis and paid on a monthly basis. The margin rate is variable and is determined by the size of the margin loan.</p>
@@ -71,7 +71,9 @@ const PricingPage = () => {
                     </div>
                     <h2 className="wbus-ssr1698" style={{paddingTop:"50px"}}>Short Selling Fees</h2>
                     <p className="wbus-ssr1699">For a short position, you need to borrow shares of a company before you sell them. The cost associated with a short sale is the fee for borrowing the stocks of said company. The stock loan rate changes on a daily basis based on market condition. Just as interest on margin trading, it is calculated on a daily basis and charged daily. The formula is:<br/>Daily Margin Interest (Short Position) = The Daily Market Value of the Borrowed Stocks when Market Closes* Stock Loan Rate for That Stock/360.</p>
-                </div>
+                    </div>
+                </Col>
+                <Col lg="6" md="6" sm="12" xs="12">
                 <div className="wbus-ssr1703">
                     <h1 className="wbus-ssr1705" aria-level="2">Fees Charged By Regulatory Agencies &amp; Exchanges</h1>
                     <h2 className="wbus-ssr1706">SF Capital Market does not charge commissions for trading stocks, ETFs and options listed on U.S. exchanges. However, fees are still applied by certain regulatory agencies, some of which are passed from the broker dealer to clients as a pass through transaction. SF Capital Market does not profit from these fees.</h2>
@@ -139,6 +141,8 @@ const PricingPage = () => {
                         <li>Our clearing firm, Apex, will withhold the above regulatory fees where applicable. All fees in the table above are subject to change without notice as per our clearing partner, Apex Clearing.</li>
                     </ul>
                 </div>
+                </Col>
+                <Col lg="6" md="6" sm="12" xs="12">
                 <div className="wbus-ssr1712">
                     <h1 className="wbus-ssr1713" aria-level="2">Other Relevant Fees</h1>
                     <h2 className="wbus-ssr1714">Deposit &amp; Withdrawal Fees</h2>
@@ -252,8 +256,8 @@ const PricingPage = () => {
                     <p className="wbus-ssr1726">Note: Per regulatory requirements, we must provide statements and confirms to clients. Normally this is sent electronically to the email address provided by clients in their account opening application. However, if the email address fails to receive the email, we are required to send paper statements, confirms, and prospectus to the mailing address on file. This will incur the above paper material delivery fees, charged by Apex, our clearing firm.</p>
                     <p className="wbus-ssr1725"><span>* SF Capital Market reserves the right to change or modify the fee schedule at own discretion.</span><span>Updated on: Feb 23, 2021</span></p>
                 </div>
-            </div>
-        </section>
+                </Col>
+        </Row>
             <FooterComponent />
         </PricingPageContainer>
     );
