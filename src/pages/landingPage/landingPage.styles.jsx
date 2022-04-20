@@ -28,10 +28,6 @@ export const LandingPageContainer = styled("div")`
       width: 100vw;
       height: 500px;
     }
-    source {
-      position: relative;
-      height: 100%;
-    }
     .topWrap {
       padding-top: 50px;
     }
@@ -263,7 +259,6 @@ export const LandingPageContainer = styled("div")`
 
     .accountright {
       width: 100%;
-      background: yellow;
     }
 
     .accountWrap > img {
@@ -784,7 +779,6 @@ export const LandingPageContainer = styled("div")`
   }
   .scroll {
     width: 100%;
-    background: purple;
     align-items: center;
     flex-direction: column;
     padding: 1rem;

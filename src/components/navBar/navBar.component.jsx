@@ -32,11 +32,12 @@ export const Container = styled("div")`
         width: 100%;
         height: 100vh;
         display: flex;
-        position: relative;
-        top: 0;
+        position: absolute;
+        top: 80px;
         bottom: 0;
         right: 0;
-        background: gray;
+        background: #fff;
+        z-index: 20;
         flex-direction: column;
     }
     #nav-link {
@@ -82,12 +83,18 @@ export const Container = styled("div")`
     .navbar-section {
         width: 100%;
     }
+    #hamburger-div {
+        display: flex;
+        width: 100%;
+        margin-top: 20px;
+        padding-right: 10px;
+        justify-content: flex-end;
+    }
     #hamburger {
         display: inline-flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: end;
         padding: 2;
-        border-radius: 2rem;
+        border: none;
         color: gray;
     }
     #hamburger:hover {
@@ -306,7 +313,8 @@ const NavbarComponent = () => {
 
                     <Col lg="hidden" md="hidden" sm="6" xs="6">
                      {/* <!-- Mobile menu button--> */}
-                     <button onClick={mobileNavBarHandler} type="button" id="hamburger" className="hamburger" aria-controls="mobile-menu" aria-expanded="false">
+                     <div id='hamburger-div'>
+                     <button onClick={mobileNavBarHandler} type="button" id='hamburger' className="hamburger" aria-controls="mobile-menu" aria-expanded="false">
                         <span className="sr-only">Open main menu</span>
                         {/* <!--
                             Icon when menu is closed.
@@ -329,10 +337,12 @@ const NavbarComponent = () => {
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                         </svg>
                         </button>
+                        </div>
                     </Col>
                 </Row>
 
                             {/* <!-- Mobile menu, show/hide based on menu state. --> */}
+                <Row>
                 <div className={showMobileNav ? 'mobile-menu' : 'hidden'}>
                     <div className="menu-nav">
                     {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
@@ -351,6 +361,7 @@ const NavbarComponent = () => {
                         </div>
                     </div>
                 </div>
+                </Row>
         </Container>
     );
 }
