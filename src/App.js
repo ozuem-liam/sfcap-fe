@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Switch, Route } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import LandingPage from "./pages/landingPage/landingPage.component";
 import PricingPage from "./pages/pricingPage/pricingPage.component";

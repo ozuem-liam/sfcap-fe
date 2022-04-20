@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import SocketFxLogo from "../../assets/SocketFX Normal.png";
 import {Link} from "react-router-dom";
 import styled from "styled-components";
+import { Row, Col } from "react-bootstrap";
 
 export const Container = styled("div")`
 @media (max-width: 1000px) {
@@ -284,9 +285,9 @@ const NavbarComponent = () => {
         window.location.href = "/signup";
     }
     return (
-        <Container>
-            <div className="navbar-container" style={{height:"80px"}}>
-                <div className="navbar-sub-container" style={{top:"0px"}} id="common_head">
+        <Container fluid>
+                <Row>
+                    <Col lg="12" md="12" sm="6" xs="6">
                     <div className="navbar-section">
                         <img src={SocketFxLogo} alt="Logo" className="logo" />
                         <nav role="menubar" className="nav">
@@ -294,16 +295,18 @@ const NavbarComponent = () => {
                             <a role="menuitem" aria-label="MARKET" href="market" className="">MARKET</a>
                             <a role="menuitem" aria-label="PRICING" href="/pricing" className="">PRICING</a>
                         </nav>
-                        
                         <div className="btn-container common_head_btnWrap">
                             <div className="btn-action">
                                 <Link to="/login" role="button" aria-label="LOG IN" className="login-btn">LOG IN</Link>
                                 <Link to="/signup" role="button" aria-label="SIGN UP" className="signup-btn">SIGN UP</Link>
                             </div>
                         </div>
+                    </div>
+                    </Col>
 
-                        {/* <!-- Mobile menu button--> */}
-                        <button onClick={mobileNavBarHandler} type="button" id="hamburger" className="hamburger" aria-controls="mobile-menu" aria-expanded="false">
+                    <Col lg="hidden" md="hidden" sm="6" xs="6">
+                     {/* <!-- Mobile menu button--> */}
+                     <button onClick={mobileNavBarHandler} type="button" id="hamburger" className="hamburger" aria-controls="mobile-menu" aria-expanded="false">
                         <span className="sr-only">Open main menu</span>
                         {/* <!--
                             Icon when menu is closed.
@@ -326,9 +329,8 @@ const NavbarComponent = () => {
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                         </svg>
                         </button>
-                    </div>
-                </div>
-            </div>
+                    </Col>
+                </Row>
 
                             {/* <!-- Mobile menu, show/hide based on menu state. --> */}
                 <div className={showMobileNav ? 'mobile-menu' : 'hidden'}>

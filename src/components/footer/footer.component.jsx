@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import { Row, Col } from "react-bootstrap";
 
 export const Container = styled("div")`
 @media (max-width: 1000px) {
@@ -116,29 +117,29 @@ const FooterComponent = () => {
         <Container>
             <footer className="wbus-ssr2271643">
                 <div className="wbus-ssr2271645">
-                        <div className="wbus-ssr2271646">
-                            <div>
+                        <Row className="wbus-ssr2271646">
+                            <Col lg='3' md='4' sm='6' xs='12'>
                                 <p role="heading" aria-level="3" aria-label="FAQ">FAQ</p>
                                 <a aria-label="Read SF Capital Market Fee Schedule Details" href="#">Fee Schedule</a>
                                 <a aria-label="View all account related FAQ" href="#">Account</a>
                                 <a aria-label="View all margin trading related FAQ" href="#">Margin Trading</a>
                                 <a aria-label="How to File an Inquiry" href="#">How to File an Inquiry</a>
                                 <a aria-label="Customer Relationship Summary" href="#">Customer Relationship Summary</a>
-                            </div>
-                            <div>
-                            <p role="heading" aria-level="3" aria-label="About SF Capital Market">About SF Capital Market</p>
-                            <a aria-label="Read SF Capital Market&#x27;s Company Introduction" href="#">Our Story</a>
-                            <a aria-label="Read SF Capital Market&#x27;s recruitment information" href="#" rel="nofollow">Careers</a>
-                            <a aria-label="Read our company events and press release articles" href="#">Blog</a>
-                            <a aria-label="Check SF Capital Market&#x27;s membership with FINRA" href="#" target="_blank" rel="noreferrer noopener">BrokerCheck</a>
-                            <a aria-label="our execution quality" href="/execution" target="_blank" rel="nofollow">Our Execution Quality</a>
-                        </div>
-                        <div>
-                                            <p role="heading" aria-level="3" aria-label="Terms Conditions">Terms &amp; Conditions</p>
-                                            <a aria-label="Read our privacy policy" href="/privacy-policy">Privacy Policy</a>
-                                            <a aria-label="Read our business continuity plan disclosure" href="/terms-and-conditions">Terms &amp; Conditions</a>
-                        </div>
-                        <div>
+                            </Col>
+                            <Col lg='3' md='4' sm='6' xs='12'>
+                                <p role="heading" aria-level="3" aria-label="About SF Capital Market">About SF Capital Market</p>
+                                <a aria-label="Read SF Capital Market&#x27;s Company Introduction" href="#">Our Story</a>
+                                <a aria-label="Read SF Capital Market&#x27;s recruitment information" href="#" rel="nofollow">Careers</a>
+                                <a aria-label="Read our company events and press release articles" href="#">Blog</a>
+                                <a aria-label="Check SF Capital Market&#x27;s membership with FINRA" href="#" target="_blank" rel="noreferrer noopener">BrokerCheck</a>
+                                <a aria-label="our execution quality" href="/execution" target="_blank" rel="nofollow">Our Execution Quality</a>
+                            </Col>
+                        <Col lg='3' md='4' sm='6' xs='12'>
+                            <p role="heading" aria-level="3" aria-label="Terms Conditions">Terms &amp; Conditions</p>
+                            <a aria-label="Read our privacy policy" href="/privacy-policy">Privacy Policy</a>
+                            <a aria-label="Read our business continuity plan disclosure" href="/terms-and-conditions">Terms &amp; Conditions</a>
+                        </Col>
+                        <Col lg='3' md='4' sm='6' xs='12'>
                             <p role="heading" aria-level="3" aria-label="Contact us">Contact us</p>
                             <a aria-label="send an email to SF Capital Market customer service team" rel="nofollow" href="mailto:support@sfcapitalmarket.com">support@sfcapitalmarket.com</a>
                             <a aria-label="call our customer service" href="tel:+1 (888) 828-0618" rel="nofollow">+1 (888) 828-0618</a>
@@ -147,8 +148,8 @@ const FooterComponent = () => {
                                 <a aria-label="quick access to our Twitter account" href="#" className="wbus-ssr2271661 wbus-ssr2271664" target="_blank" rel="noreferrer"></a>
                                 <a aria-label="quick access to our instagram account" className="wbus-ssr2271669 wbus-ssr2271670" href="#" target="_blank" rel="noreferrer" style={{marginRight:"0"}}></a>
                             </div>
-                        </div>
-                    </div>
+                        </Col>
+                    </Row>
                                     <div className="wbus-ssr2271651">
                                         <p>Securities trading is offered to self-directed customers by SF Capital Market Financial LLC, a broker dealer registered with the Securities and Exchange Commission (SEC). SF Capital Market Financial LLC is a member of the Financial Industry Regulatory Authority 
                                             (<a aria-label="quick access to FINRA Broker Check" href="https://brokercheck.finra.org/firm/summary/289063" target="_blank" rel="noreferrer">FINRA</a>), Securities Investor Protection Corporation (<a aria-label="quick access to SIPC broker list" href="https://www.sipc.org/list-of-members/?query=webull" target="_blank" rel="noreferrer">SIPC</a>),
